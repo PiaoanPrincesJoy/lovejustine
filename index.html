@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Passcode</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Passcode</h2>
+        <div class="dots" id="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <p class="error-message" id="error-message"></p>
+        <div class="keypad">
+            <button class="key" onclick="enterDigit(1)">1</button>
+            <button class="key" onclick="enterDigit(2)">2</button>
+            <button class="key" onclick="enterDigit(3)">3</button>
+            <button class="key" onclick="enterDigit(4)">4</button>
+            <button class="key" onclick="enterDigit(5)">5</button>
+            <button class="key" onclick="enterDigit(6)">6</button>
+            <button class="key" onclick="enterDigit(7)">7</button>
+            <button class="key" onclick="enterDigit(8)">8</button>
+            <button class="key" onclick="enterDigit(9)">9</button>
+            <button class="key cancel" onclick="clearPasscode()">Cancel</button>
+            <button class="key" onclick="enterDigit(0)">0</button>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

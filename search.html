@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search UI</title>
+    <style>
+        body {
+            background-color: #202124;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .search-container {
+            margin-top: 50px;
+        }
+        .search-bar {
+            background-color: #303134;
+            border: none;
+            border-radius: 24px;
+            padding: 10px 15px;
+            width: 60%;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+        .trending-container {
+            text-align: left;
+            margin: 20px auto;
+            width: 60%;
+        }
+        .trending-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .search-item {
+            font-size: 16px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: #4285F4;">G<span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span></h1>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Search Google or type a URL" onkeypress="checkSearch(event)">
+    </div>
+
+    <div class="trending-container">
+        <div class="trending-title">Trending searches</div>
+        <div class="search-item">🔍 Why is my bf so cute?</div>
+        <div class="search-item">🔍 Why does Rheina love him more?</div>
+        <div class="search-item">🔍 Rheina's birthdate (coz her bf forgets)</div>
+    </div>
+
+    <script>
+        function checkSearch(event) {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            if (event.key === "Enter" && input.includes("how long have we been together?")) {
+                window.location.href = "timer.html"; // Redirect to the countdown page
+            }
+        }
+    </script>
+
+</body>
+</html>

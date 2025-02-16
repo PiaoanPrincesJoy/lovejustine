@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    background: url('bg.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    height: 220vh;
+}
+
+/* Page Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Song List */
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Song */
+.song {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/* Song Image */
+.song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* Song Info */
+.info {
+    text-align: left;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.artist {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.song img {
+    width: 60px; /* Adjust size */
+    height: 60px;
+}
+
+.info {
+    max-width: 200px;
+    overflow: hidden;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.877); /* Semi-transparent white */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px;
+    color: #f78da7; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}

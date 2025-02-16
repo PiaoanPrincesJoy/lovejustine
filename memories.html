@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid Grid</title>
+    <h1>Our Favorites Photos</h1>
+    <link rel="stylesheet" href="style/memories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="polaroid-grid">
+        <!-- Repeat this for each image -->
+        <div class="polaroid" onclick="openPopup('imgs/memories/Picture1.png', 'I\'m putting this cause you said it\'s your fave')">
+            <img src="imgs/memories/Picture1.png" alt="Memory 1">
+            <p>November 17, 2024</p>
+        </div>
+        <div class="polaroid" onclick="openPopup('imgs/memories/Picture2.png', 'wow inlove na ang eabab nyan hahah')">
+            <img src="imgs/memories/Picture2.png" alt="Memory 2">
+            <p>December 14, 2024</p>
+        </div>
+        <div class="polaroid" onclick="openPopup('imgs/memories/Picture3.png', 'Our First Christmas together ❤️')">
+            <img src="imgs/memories/Picture3.png" alt="Memory 3">
+            <p>December 25, 2024</p>
+        </div>
+        <div class="polaroid" onclick="openPopup('imgs/memories/Picture4.png', 'My friends ask me pa, why nauna yung photobooth eh hindi naman tayo hahahah well I like having uncerntainty than being definite with others. I got too busy falling na sayo to think of talking to others pa')">
+            <img src="imgs/memories/Picture4.png" alt="Memory 1">
+            <p>November 17, 2024</p>
+        </div>
+        <div class="polaroid" onclick="openPopup('imgs/memories/Picture5.png', 'Finally got to treat you din, pag ako yumaman I\'ll buy you anything.')">
+            <img src="imgs/memories/Picture5.png" alt="Memory 2">
+            <p>January 29, 2025</p>
+        </div>
+        <div class="polaroid" onclick="openPopup('imgs/memories/Picture6.png', 'well we look great together, deadma sa basher. 🤷🏻‍♀️.')">
+            <img src="imgs/memories/Picture6.png" alt="Memory 3">
+            <p>February 12, 2025</p>
+        </div>
+        <!-- Add more polaroid frames as needed -->
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img id="popup-img" src="" alt="Expanded Memory">
+            <p id="popup-desc"></p>
+        </div>
+    </div>
+
+
+    <div class="navigation">
+        <button class="nav-button" onclick="window.location.href='hearts.html'">
+             <i class="fas fa-arrow-left"></i> Previous Page
+        </button>
+    </div>
+
+    <script src="scripts/memories.js"></script>
+</body>
+</html>

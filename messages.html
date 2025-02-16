@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="notes-container">
+        <h1>Messages</h1>
+        <ul class="note-list">
+            <li onclick="openPopup('you\'ve got me thinking', 'Was this our first official date? not sure but surely made me think I am starting to like you na. kind of want to spend more time with you, I\'m not even planning to like someone.', 'imgs/notes/MessageImage1.png')">November 17, 2024</li>
+            <li onclick="openPopup('I was supposed to say yes on the 12th', 'When I took this picture, I was sure na like legit that I want you. I wasn\'t sure how can I tell you, I was thinking pa kung ipagbubukas ko na lang', 'imgs/notes/MessageImage2.png')">December 14, 2024</li>
+            <li onclick="openPopup('wow', 'Our First KISS!! ❤️.', 'imgs/notes/MessageImage3.png')">December 29, 2024</li>
+            <li onclick="openPopup('Crush mo ko', 'Found this! I was having second thoughts pa if connected sakin so I tried posting new notes about cafe haha!', 'imgs/notes/MessageImage4.png')">Date Unknown</li>
+            <li onclick="openPopup('DM me po', 'Send me another password so I can send the whole playlist 🤪 clue: you always say this!', 'imgs/notes/MessageImage5.png')">February 02, 2025</li>
+        </ul>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="polaroid">
+                <img id="popup-image" src="" alt="Note Image">
+                <h2 id="popup-title">Note Title</h2>
+                <p id="popup-description">Note Description</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-button" onclick="window.location.href='hearts.html'">
+             <i class="fas fa-arrow-left"></i> Previous Page
+        </button>
+    </div>
+
+    <script src="scripts/messages.js"></script>
+</body>
+</html>

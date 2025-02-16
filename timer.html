@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Countdown</title>
+    <style>
+        body {
+            background: #f7c6d3;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .timer {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #f78da7;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>We've been together for:</h1>
+        <div class="timer" id="countdown"></div>
+        <p>... and still counting &lt;3</p>
+        <button class="button" onclick="window.location.href='hearts.html'">Go to next page →</button>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const startDate = new Date("2024-12-14T00:00:00"); // Change to your anniversary date
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById("countdown").innerHTML = 
+                `${days} Days : ${hours} Hours : ${minutes} Minutes : ${seconds} Seconds`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+
+</body>
+</html>
