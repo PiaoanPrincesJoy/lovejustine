@@ -9,7 +9,7 @@ body {
 
 .envelope-container {
     position: center;
-    width: 300px;
+    width: 350px;
     height: 250px;
     cursor: pointer;
 }
@@ -46,7 +46,7 @@ body {
     position: center;
     top: 100%;
     left: 10px;
-    width: 300px;
+    width: 350px;
     height: 250px;
     background: #fffaf0;
     border-radius: 5px;
@@ -70,7 +70,7 @@ body {
     resize: none;
 }
 .button {
-    margin-top: 300px;
+    margin-top: 700px;
     padding: 10px 20px;
     background: white;
     color: #f78da7;
