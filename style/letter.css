@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 63vh;
+    height: 62vh;
     background: url('bg.jpg');
     margin: 0;
 }
@@ -12,6 +12,7 @@ body {
     width: 100px;
     height: 100px;
     cursor: pointer;
+    top: 100px;
     margin-left: 100px;
 }
 
@@ -45,8 +46,8 @@ body {
 
 .letter {
     position: center;
-    top: 50%;
-    left: 20px;
+    top: 100%;
+    left: 10px;
     width: 100px;
     height: 100px;
     background: #fffaf0;
