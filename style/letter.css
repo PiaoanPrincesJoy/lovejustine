@@ -22,6 +22,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     z-index: 1; /* Envelope stays behind the letter */
+    margin-bottom: 60px;
 }
 
 .flap {
@@ -70,8 +71,6 @@ body {
     resize: none;
 }
 .button {
-    margin-top: 600px;
-    margin-right: 400px;
     padding: 10px 20px;
     background: white;
     color: #f78da7;
