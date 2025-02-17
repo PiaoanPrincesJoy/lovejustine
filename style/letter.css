@@ -9,10 +9,9 @@ body {
 
 .envelope-container {
     position: center;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     cursor: pointer;
-    margin-left: 100px;
 }
 
 .envelope {
@@ -47,8 +46,8 @@ body {
     position: center;
     top: 100%;
     left: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
     background: #fffaf0;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
