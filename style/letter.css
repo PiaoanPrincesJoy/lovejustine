@@ -12,6 +12,7 @@ body {
     width: 350px;
     height: 250px;
     cursor: pointer;
+    margin-left: 300px;
 }
 
 .envelope {
@@ -44,6 +45,7 @@ body {
 
 .letter {
     position: center;
+    margin-left: 300px;
     top: 100%;
     left: 10px;
     width: 350px;
@@ -70,7 +72,8 @@ body {
     resize: none;
 }
 .button {
-    margin-top: 700px;
+    margin-top: 600px;
+    margin-right: 400px;
     padding: 10px 20px;
     background: white;
     color: #f78da7;
