@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Letter</title>
-    <link rel="stylesheet" href="style/letter.css">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('style/bg.jpg');
+        }
+        .container {
+            position: relative;
+            cursor: pointer;
+        }
+        .heart {
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+        .heart:active {
+            transform: scale(0.95);
+        }
+        .letter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 80px;
+            background-color: #fff;
+            border: 2px solid #d33;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0;
+            transition: opacity 0.5s, transform 0.5s;
+            transform: translate(-50%, -70%);
+        }
+        .letter.show {
+            opacity: 1;
+            transform: translate(-50%, -110%);
+        }
+    </style>
 </head>
 <body>
 
-    <div class="envelope-container" onclick="toggleLetter()">
-        <div class="envelope">
-            <div class="flap"></div>
-            <div class="flap"></div>
-            <div class="flap"></div>
-            <div class="body"></div>
-        </div>
-        <div class="letter">
-            <textarea id="letter-text" placeholder="I've got a lot to say but I'll shorten it by saying, if God lets me wear a wedding ring in the future, I hope it finds its pair in your ring finger. Thank you for everything, for sharing your love with me and for choosing me, my Justine! 💖 Wishing us many more wonderful years together."></textarea>
-        </div>
+    <div class="container" onclick="showLetter()">
+        <img src="img/heart.png" class="heart" alt="Heart with Wings">
+        <div class="letter" id="letter">I've got a lot to say but I'll shorten it by saying, if God lets me wear a wedding ring in the future, <br> I hope it finds its pair in your ring finger. <br> Thank you for everything, for sharing your love with me and for choosing me, my Justine! 💖 <br> Wishing us many more wonderful years together</div>
     </div>
-    </div>
-</div>
-        <button class="button" onclick="window.location.href='hearts.html'">
-             <i class="fas fa-arrow-left"></i> Previous Page
-             </button>
-    <script src="scripts/letter.js"></script>
+
+    <script>
+        function showLetter() {
+            document.getElementById("letter").classList.toggle("show");
+        }
+    </script>
+
 </body>
 </html>
