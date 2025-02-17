@@ -75,11 +75,9 @@ body {
     justify-content: center;
     gap: 60px;
     margin-top: 10px;
-    position: top;
 }
 
 .nav-button {
-    top: 550px;
     background-color: rgba(255, 255, 255, 0.877); /* Semi-transparent white */
     border: none;
     padding: 12px 20px;
@@ -96,23 +94,6 @@ body {
 
 .nav-button:hover {
     background-color: rgba(255, 255, 255, 0.7);
-}
-.background-gif {
-    position: absolute;  /* Positions it freely */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1; /* Places it above the background but below other elements */
-}
-
-.background-gif img {
-    width: 100%; /* Make it full width */
-    height: auto; /* Maintain aspect ratio */
-    opacity: 50; /* Adjust transparency if needed */
 }
 .footer {
     position: fixed;
