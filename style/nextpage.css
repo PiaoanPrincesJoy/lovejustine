@@ -3,7 +3,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 62vh;
     font-family: Arial, sans-serif;
 }
 
@@ -51,7 +50,7 @@ h2 {
     font-size: 14px;
 }
 
-.buutton {
+.navigation {
     margin-top: 600px;
     margin-right: 400px;
     padding: 10px 20px;
