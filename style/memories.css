@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('bg.jpg') no-repeat center center/cover;
+    background: url('bg.jpg');
     text-align: center;
     margin: 0;
     padding: 20px;
