@@ -9,11 +9,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 62vh;
+    height: 100%;
     background: url('bg.jpg');
 }
 
 .container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     text-align: center;
