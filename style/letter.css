@@ -70,28 +70,13 @@ body {
     outline: none;
     resize: none;
 }
-.navigation {
-    display: relative;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 10px;
-}
-
-.nav-button {
-    background-color: rgba(255, 255, 255, 0.877); /* Semi-transparent white */
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #f78da7;
     border: none;
-    padding: 12px 20px;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 20px;
     font-size: 16px;
-    color: #f78da7; 
-    display: flex;
-    align-items: center;
-    gap: 8px;
     cursor: pointer;
-    position: absolute;
-    transition: background 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
+        }
