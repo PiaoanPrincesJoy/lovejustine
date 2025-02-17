@@ -9,10 +9,10 @@ body {
 
 .envelope-container {
     position: center;
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     cursor: pointer;
-    margin-left: 300px;
+    margin-left: 450px;
 }
 
 .envelope {
@@ -45,11 +45,11 @@ body {
 
 .letter {
     position: center;
-    margin-left: 300px;
+    margin-left: 450px;
     top: 100%;
     left: 10px;
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     background: #fffaf0;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
