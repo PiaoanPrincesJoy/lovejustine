@@ -111,3 +111,12 @@ h1 {
 .nav-button:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
+
+.scroll-box {
+    max-height: 400px;  /* Set the height limit */
+    overflow-y: auto;   /* Enable vertical scroll */
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    margin: 10px 0;
+}
