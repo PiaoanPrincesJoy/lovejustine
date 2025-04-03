@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 15px; /* Add left and right padding to avoid flush edges */
+    box-sizing: border-box;
 }
 
 /* Polaroid Grid */
@@ -28,6 +29,7 @@ body {
     padding: 10px;
     margin: 0;
     box-sizing: border-box;
+    justify-items: center; /* Centers the items within the grid */
 }
 
 /* Polaroid Frame */
@@ -42,6 +44,7 @@ body {
     width: 100%;
     max-width: 180px; /* Increased polaroid size */
     margin: auto; /* Centers the polaroid in the grid */
+    box-sizing: border-box;
 }
 
 .polaroid img {
@@ -126,6 +129,7 @@ body {
 @media screen and (max-width: 600px) {
     .polaroid-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 polaroids per line for mobile */
+        padding: 0 15px; /* Add some padding to avoid flush edges */
     }
 
     .polaroid {
