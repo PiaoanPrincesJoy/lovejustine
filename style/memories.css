@@ -20,16 +20,13 @@ body {
 /* Polaroid Grid */
 .polaroid-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for large screens */
     gap: 15px;
     width: 100%;
     max-width: 100%;
     padding: 10px;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: auto; /* Horizontal scrolling if necessary */
-    white-space: nowrap; /* Prevents wrapping of items */
-    justify-content: center; /* Centers the grid */
 }
 
 /* Polaroid Frame */
@@ -125,17 +122,13 @@ body {
 /* Media Queries for Responsiveness */
 
 /* For small screens like phones */
-@media screen and (max-width: 430px) {
-    body {
-        padding: 10px;
-    }
-
+@media screen and (max-width: 600px) {
     .polaroid-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 polaroids per line */
+        grid-template-columns: repeat(2, 1fr); /* 2 polaroids per line for mobile */
     }
 
     .polaroid {
-        max-width: 100px; /* Smaller polaroid size */
+        max-width: 100px; /* Smaller polaroids for mobile devices */
     }
 
     .polaroid p {
@@ -154,9 +147,9 @@ body {
 }
 
 /* For larger phones or small tablets */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
     .polaroid-grid {
-        grid-template-columns: repeat(3, 1fr); /* Keep 3 polaroids per line */
+        grid-template-columns: repeat(2, 1fr); /* 2 polaroids per line for smaller tablets */
     }
 
     .polaroid {
@@ -169,9 +162,9 @@ body {
 }
 
 /* For tablets and above */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .polaroid-grid {
-        grid-template-columns: repeat(3, 1fr); /* Keep 3 polaroids per line */
+        grid-template-columns: repeat(3, 1fr); /* 3 polaroids per line for tablets and larger devices */
     }
 
     .polaroid {
@@ -189,9 +182,9 @@ body {
 }
 
 /* For large devices (desktops and laptops) */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .polaroid-grid {
-        grid-template-columns: repeat(3, 1fr); /* Keep 3 polaroids per line */
+        grid-template-columns: repeat(3, 1fr); /* 3 polaroids per line for desktops/laptops */
     }
 
     .polaroid {
