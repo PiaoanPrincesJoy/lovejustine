@@ -57,7 +57,7 @@ h1 {
     background: #ffdce5;
     padding: 20px;
     border-radius: 10px;
-    text-align: center justify;
+    text-align: justify;
     width: 300px;
     position: relative;
 }
