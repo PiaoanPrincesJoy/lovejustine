@@ -15,7 +15,10 @@ h2 {
     font-size: 24px;
     margin-top: 200px;
     margin-bottom: 50px;
-    color: #f78da7;
+    color: #FFC0CB; /* Peachy Pink */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Subtle drop shadow */
+    font-weight: bold;
+    text-align: center;
 }
 
 .buttons {
