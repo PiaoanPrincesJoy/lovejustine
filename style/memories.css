@@ -7,14 +7,14 @@
         padding: 20px;
     }
 
-	body.no-scroll {
+    body.no-scroll {
     overflow: hidden;
     }
     
     h1 {
         font-size: 22px;
         margin-bottom: 15px;
-        color: #fdfdfd;
+        color: black;
     }
 
     /* Responsive Polaroid Grid */
