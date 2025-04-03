@@ -3,7 +3,7 @@ body {
     background: url('bgg.jpg');
     font-family: Arial, sans-serif;
     text-align: center;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
