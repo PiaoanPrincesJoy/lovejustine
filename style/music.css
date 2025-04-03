@@ -1,3 +1,4 @@
+@media screen and (max-width: 430px) {
 /* General Styles */
 body {
     background: url('bgg.jpg');
@@ -97,4 +98,5 @@ body {
 
 .nav-button:hover {
     background-color: rgba(255, 255, 255, 0.7);
+}
 }
