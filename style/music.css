@@ -1,3 +1,11 @@
+/* Ensure HTML and Body take full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
 /* General Styles */
 body {
     background: url('bgg.jpg');
@@ -8,11 +16,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Adjusted to fit full viewport height */
+    height: 100%; /* Take full height */
+    width: 100%; /* Ensure it fills the viewport width */
+    overflow: hidden; /* Prevent overflow */
 }
 
 .time {
-    font-size: 6vw; /* Relative to viewport width */
+    font-size: 6vw; /* Responsive size based on viewport width */
     font-weight: bold;
 }
 
@@ -156,5 +166,42 @@ body {
     .album-art {
         width: 25vw;
         height: 25vw;
+    }
+}
+
+/* For laptops (1024px - 1440px screen size) */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .time {
+        font-size: 4vw; /* Slightly smaller font size */
+    }
+    .album-art {
+        width: 15vw; /* Reduced size for better fit */
+        height: 15vw;
+    }
+    .music-player {
+        width: 25vw; /* Adjust width for laptop screens */
+        max-width: 450px;
+    }
+    .controls button {
+        font-size: 22px; /* Adjust button size for larger screens */
+    }
+    .nav-button {
+        font-size: 18px; /* Adjust font size */
+        padding: 14px 22px; /* Adjust padding for larger screens */
+    }
+}
+
+/* For large desktop screens (above 1440px) */
+@media screen and (min-width: 1440px) {
+    .time {
+        font-size: 2.5vw; /* Further smaller for large screens */
+    }
+    .album-art {
+        width: 12vw;
+        height: 12vw;
+    }
+    .music-player {
+        width: 20vw;
+        max-width: 500px;
     }
 }
