@@ -1,3 +1,4 @@
+@media screen and (max-width: 430px) {
 body {
     font-family: Arial, sans-serif;
     background: url('bgg.jpg');
@@ -114,4 +115,5 @@ h1 {
 
 .nav-button:hover {
     background-color: rgba(255, 255, 255, 0.7);
+}
 }
