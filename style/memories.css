@@ -15,13 +15,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 15px; /* Add left and right padding to avoid flush edges */
 }
 
 /* Polaroid Grid */
 .polaroid-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for large screens */
-    gap: 15px;
+    gap: 10px; /* Reduced gap between polaroids */
     width: 100%;
     max-width: 100%;
     padding: 10px;
@@ -39,20 +40,20 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
     width: 100%;
-    max-width: 140px; /* Ensures the polaroids are appropriately sized */
+    max-width: 180px; /* Increased polaroid size */
     margin: auto; /* Centers the polaroid in the grid */
 }
 
 .polaroid img {
     width: 100%;
     height: auto;
-    max-height: 120px; /* Prevent overflow of images */
+    max-height: 160px; /* Increased max height for bigger polaroid images */
     object-fit: cover;
 }
 
 .polaroid p {
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 14px; /* Adjusted text size for bigger polaroids */
     color: #b98585;
 }
 
@@ -128,7 +129,7 @@ body {
     }
 
     .polaroid {
-        max-width: 100px; /* Smaller polaroids for mobile devices */
+        max-width: 130px; /* Increased polaroid size for mobile */
     }
 
     .polaroid p {
@@ -153,7 +154,7 @@ body {
     }
 
     .polaroid {
-        max-width: 110px; /* Slightly larger polaroid size */
+        max-width: 140px; /* Slightly larger polaroid size */
     }
 
     .popup {
@@ -168,7 +169,7 @@ body {
     }
 
     .polaroid {
-        max-width: 130px; /* Adjust polaroid size */
+        max-width: 160px; /* Adjust polaroid size */
     }
 
     .popup {
@@ -188,7 +189,7 @@ body {
     }
 
     .polaroid {
-        max-width: 150px; /* Larger polaroids for bigger screens */
+        max-width: 180px; /* Larger polaroids for bigger screens */
     }
 
     .popup {
