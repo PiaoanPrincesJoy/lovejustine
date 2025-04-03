@@ -19,7 +19,7 @@
             margin: 0;
         }
         .container {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.5);
             padding: 20px;
             border-radius: 10px;
         }
@@ -48,6 +48,7 @@
         <h1>We've been together for:</h1>
         <div class="timer" id="countdown"></div>
         <p>... and still counting &lt;3</p>
+        <p>will count until our hearts stop beating</p>
         <button class="button" onclick="window.location.href='hearts.html'">Go to next page →</button>
     </div>
 
@@ -63,7 +64,7 @@
             const seconds = Math.floor((diff / 1000) % 60);
 
             document.getElementById("countdown").innerHTML = 
-                `${days} Days : ${hours} Hours : ${minutes} Minutes : ${seconds} Seconds`;
+                `${days} Days , ${hours} Hours : ${minutes} Minutes : ${seconds} Seconds`;
         }
 
         setInterval(updateCountdown, 1000);
