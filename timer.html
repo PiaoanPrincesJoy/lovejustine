@@ -10,12 +10,12 @@
             background: url('style/bgg.jpg') no-repeat center center/cover;
             font-family: Arial, sans-serif;
             text-align: center;
-            color: black;
+            color: #d36c87;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 93vh;
+            height: 92vh;
             margin: 0;
         }
         .container {
@@ -34,7 +34,7 @@
             margin-top: 20px;
             padding: 10px 20px;
             background: white;
-            color: #f78da7;
+            color: #d36c87;
             border: none;
             border-radius: 20px;
             font-size: 16px;
@@ -64,7 +64,7 @@
             const seconds = Math.floor((diff / 1000) % 60);
 
             document.getElementById("countdown").innerHTML = 
-                `${days} Days , ${hours} Hours : ${minutes} Minutes : ${seconds} Seconds`;
+                `${days} Days, ${hours} Hours: ${minutes} Minutes: ${seconds} Seconds`;
         }
 
         setInterval(updateCountdown, 1000);
